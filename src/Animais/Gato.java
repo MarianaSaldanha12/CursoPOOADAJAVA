@@ -4,8 +4,8 @@ public class Gato extends Animal{
 
     static int numeroDeGatos;
 
-    public Gato(String nome, String cor, double peso) {
-        super(nome, cor, peso);
+    public Gato(String nome, String cor, double peso, String estadoDeEspiriito) {
+        super(nome, cor, peso, estadoDeEspiriito);
     }
 
 

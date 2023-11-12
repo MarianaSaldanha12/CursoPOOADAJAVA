@@ -4,8 +4,8 @@ public class Passaros extends Animal {
 
     static int numeroDePassaros;
 
-    public Passaros(String nome, String cor, double peso) {
-        super(nome, cor, peso);
+    public Passaros(String nome, String cor, double peso, String estadoDeEspirito) {
+        super(nome, cor, peso, estadoDeEspirito);
     }
 
     @Override
