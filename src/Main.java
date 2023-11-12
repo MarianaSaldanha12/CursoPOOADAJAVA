@@ -1,4 +1,6 @@
 import Animais.Cachorro;
+import Animais.Gato;
+import Animais.Passaros;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,12 +16,15 @@ public class Main {
        // System.out.println(variavelInt);
 
 
-        Cachorro cachorro2 = new Cachorro("Puppy", "Marrom", 25, 5.5, 5, "carinho");
-
-        System.out.println(cachorro2.getNumeroDeCachorros());
 
         Cachorro cachorro1 = new Cachorro("Rex", "Preto", 20, 6, 6, "latir");
 
-        System.out.println(cachorro2.getNumeroDeCachorros());
+        Gato gato1 = new Gato("Felix", "Laranja", 4.5);
+
+        Passaros passaros1 = new Passaros("Frajola", "Azul", 0.5);
+
+        cachorro1.soar();
+        gato1.soar();
+        passaros1.soar();
     }
 }

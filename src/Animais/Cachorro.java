@@ -1,22 +1,14 @@
 package Animais;
 
-public class Cachorro {
-//ATRIBUTOS
+public class Cachorro extends Animal {
+
     static int numeroDeCachorros;
-    private String nome;
-    private String cor;
-    private int altura;
-    private double peso;
+
     private int tamanhoDoRabo;
 
-    private String estadoDeEspirito;
 
-    //CONSTRUTORES
-
-
-
-    public Cachorro(){}
     public Cachorro(String nome, String cor, int altura, double peso, int tamanhoDoRabo, String estadoDeEspirito) {
+        super(nome, cor, peso);
         this.nome = nome;
         this.cor = cor;
         this.altura = altura;
@@ -85,11 +77,7 @@ public class Cachorro {
         this.estadoDeEspirito = estadoDeEspirito;
     }
 
-    public void comer(){}
-    public void latir(){
-        System.out.println("AU AU");
-    }
-    public String pegar(){
+       public String pegar(){
         return "Bolinha";
     }
 
@@ -109,5 +97,9 @@ public class Cachorro {
         return "Cachorro{" +
                 "nome='" + nome + '\'' +
                 '}';
+    }
+
+    public void soar(){
+        System.out.println("AU AU");
     }
 }
