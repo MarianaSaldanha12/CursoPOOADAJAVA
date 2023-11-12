@@ -15,7 +15,10 @@ public class Main {
 
 
         Cachorro cachorro2 = new Cachorro("Puppy", "Marrom", 25, 5.5, 5, "carinho");
-        System.out.println(cachorro2.getNome());
+        Cachorro cachorro1 = new Cachorro("Rex", "Preto", 20, 6, 6, "latir");
+
+        System.out.println(cachorro1.toString());
+        System.out.println(cachorro2.toString());
 
 
     }
